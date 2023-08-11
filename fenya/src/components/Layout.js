@@ -1,6 +1,7 @@
 import * as React from 'react';
 import Link from 'next/link';
 import data from '../utils/data';
+import {ProductItem} from './ProductItem';
 
 export default function Layout() {
     return (

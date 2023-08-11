@@ -5,13 +5,13 @@ export function ProductItem({product}) {
     return (
         <div className="card">
             <Link href={'/product/${product.slug}'}>
-                <a>
+        
                     <img
                     src={product.image}
                     alt={product.name + product.description}
                     className={'rounded shadow'}
                     />
-                </a>
+      
             </Link>
             <div className="flex flex-col justify-center items-center p-5">
                 <Link href={'/product/${product.slug}'}>
