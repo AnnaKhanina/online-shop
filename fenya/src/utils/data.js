@@ -4,7 +4,7 @@ const data = {
             name: 'Free Shirt',
             slug: 'free-shirt',
             category: 'Shirts',
-            image: '././images/shirt1.jpg',
+            image: '/images/shirt1.jpg',
             price: 70,
             brand: 'Nike',
             rating: 4.5,
@@ -24,5 +24,7 @@ const data = {
             countInStock: 10,
             description: 'A fit shirt',
         },
-    ]
+    ],
 }
+
+export default data;

@@ -1,5 +1,6 @@
 import * as React from 'react';
 import Link from 'next/link';
+import data from '../utils/data';
 
 export default function Layout() {
     return (
@@ -19,7 +20,17 @@ export default function Layout() {
                     </div>
                 </nav>
             </header>
-            <main className="container px-4 ">Main</main>
+            <main className="container px-4 ">
+                <div className="grid grid-cols-1 gap-4 md:grid-cils-3 lg:grid-cols-4">
+                    {data.products.map((product)=>(
+                        <ProductItem
+                            product={product}
+                            key={product.slug}
+                        ></ProductItem>
+
+                    ))}
+                </div>
+            </main>
             <footer className="flex h-10 items-center shadow-inner justify-center">
             Footer
             </footer>
