@@ -1,5 +1,6 @@
 import Head from 'next/head';
-import Link from 'next/link';
+// import Link from 'next/link';
+import Layout from '../components/Layout';
 
 export default function Home() {
   return (
@@ -7,7 +8,8 @@ export default function Home() {
       <Head>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="flex min-h-screen flex-col justify-between">
+      <Layout />
+      {/* <div className="flex min-h-screen flex-col justify-between">
         <header>
           <nav className="flex h-12 items-center p-4 justify-between shadow-md">
             <Link href="/" className="text-lg font-bold">
@@ -23,11 +25,11 @@ export default function Home() {
             </div>
           </nav>
         </header>
-        <main>Main</main>
+        <main className="container px-4 ">Main</main>
         <footer className="flex h-10 items-center shadow-inner justify-center">
           Footer
         </footer>
-      </div>
+      </div> */}
     </>
   );
 }
