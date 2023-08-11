@@ -21,7 +21,7 @@ export default function Layout() {
                     </div>
                 </nav>
             </header>
-            <main className="container px-4 ">
+            <main className="container px-auto p-10 px-10 m-10 bg-slate-50 w-100 ">
                 <div className="grid grid-cols-1 gap-4 md:grid-cils-3 lg:grid-cols-4">
                     {data.products.map((product)=>(
                         <ProductItem
