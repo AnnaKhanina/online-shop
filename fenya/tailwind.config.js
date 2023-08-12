@@ -25,6 +25,12 @@ module.exports = {
       'bubble-gum': '#ff77e9',
       'bermuda': '#78dcca',
     },
+    listStyleType: {
+      none: 'none',
+      disc: 'disc',
+      decimal: 'decimal',
+      square: 'square',
+      roman: 'upper-roman',
   },
   plugins: [],
 };

@@ -1,6 +1,7 @@
 import * as React from 'react';
 import Link from 'next/link';
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebook, faViber, faInstagram } from '@fortawesome/free-brands-svg-icons';
 
 export function Footer() {
     return (
@@ -33,15 +34,15 @@ export function Footer() {
                 </li>
                 <li className="mx-2">
                     <div className="social-icons flex ml-4">
-                        <a href="#" className="text-2xl mx-2 text-gray-500 hover:text-purple-600 focus:text-purple-600">
-                            <i className="fab fa-facebook"></i>
-                        </a>
-                        <a href="#" className="text-2xl mx-2 text-gray-500 hover:text-purple-600 focus:text-purple-600">
-                            <i className="fab fa-twitter"></i>
-                        </a>
-                        <a href="#" className="text-2xl mx-2 text-gray-500 hover:text-purple-600 focus:text-purple-600">
-                            <i className="fab fa-instagram"></i>
-                        </a>
+                        <Link href="" className="text-2xl mx-2 text-gray-500 hover:text-purple-600 focus:text-purple-600">
+                            <FontAwesomeIcon icon={faFacebook} />
+                        </Link>
+                        <Link href="" className="text-2xl mx-2 text-gray-500 hover:text-purple-600 focus:text-purple-600">
+                            <FontAwesomeIcon icon={faViber} />
+                        </Link>
+                        <Link href="" className="text-2xl mx-2 text-gray-500 hover:text-purple-600 focus:text-purple-600">
+                            <FontAwesomeIcon icon={faInstagram} />
+                        </Link>
                 </div>    
                 </li>               
             </ul>  
