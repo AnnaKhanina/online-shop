@@ -33,4 +33,5 @@ module.exports = {
       roman: 'upper-roman',
   },
   plugins: [],
-};
+}
+}

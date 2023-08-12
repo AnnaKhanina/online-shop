@@ -1,7 +1,5 @@
 import * as React from 'react';
 import Link from 'next/link';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebook, faViber, faInstagram } from '@fortawesome/free-brands-svg-icons';
 
 export function Footer() {
     return (
@@ -31,22 +29,8 @@ export function Footer() {
                     <Link href="/blog" className="text-lg p-2 hover:text-purple-600 focus:text-purple-600">
                         Blog: LadyNaLike
                     </Link>
-                </li>
-                <li className="mx-2">
-                    <div className="social-icons flex ml-4">
-                        <Link href="" className="text-2xl mx-2 text-gray-500 hover:text-purple-600 focus:text-purple-600">
-                            <FontAwesomeIcon icon={faFacebook} />
-                        </Link>
-                        <Link href="" className="text-2xl mx-2 text-gray-500 hover:text-purple-600 focus:text-purple-600">
-                            <FontAwesomeIcon icon={faViber} />
-                        </Link>
-                        <Link href="" className="text-2xl mx-2 text-gray-500 hover:text-purple-600 focus:text-purple-600">
-                            <FontAwesomeIcon icon={faInstagram} />
-                        </Link>
-                </div>    
-                </li>               
-            </ul>  
-             
+                </li>                             
+            </ul>             
         </footer>
     );
 };
