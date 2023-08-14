@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import './input.css';
 
 export const metadata = {
   title: 'Fenya',
