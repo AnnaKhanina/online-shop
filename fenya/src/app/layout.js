@@ -1,5 +1,9 @@
 import Head from 'next/head';
-import { metadata } from './input.css'; // Импортируйте metadata из нужного места
+
+export const metadata = {
+  title: 'Fenya',
+  description: 'online-shopping',
+};
 
 export default function RootLayout({ children }) {
   return (

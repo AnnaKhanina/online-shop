@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import Layout from '../components/Layout';
-import { metadata } from './input.css'; // Импортируйте metadata из нужного места
+import { metadata } from './layout'; // Импортируйте metadata из нужного места
 
 export default function Home() {
   const pageTitle = 'Головна';
