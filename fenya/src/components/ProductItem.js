@@ -4,7 +4,7 @@ import Link from 'next/link';
 export function ProductItem({product}) {
     return (
         <div className="max-w-sm rounded-md overflow-hidden shadow-lg">
-             <Link href={`/product/${product.slug}`} as={`/product/${product.slug}`}>
+             <Link href={`/product/${product.slug}`}>
                     <img
                     src={product.image}
                     alt={product.name + product.description}
