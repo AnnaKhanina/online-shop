@@ -1,13 +1,9 @@
-import Head from 'next/head';
-import Layout from '../components/Layout';
+import RootLayout from '../app/layout';
 
 export default function Home() {
   return (
     <>
-      <Head>        
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-      <Layout title="Головна"></Layout>
+      <RootLayout title={'Головна'}></RootLayout>
     </>
   );
 }
