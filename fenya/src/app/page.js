@@ -1,9 +1,9 @@
-import RootLayout from '../app/layout';
+import Layout from '../components/Layout';
 
 export default function Home() {
   return (
     <>
-      <RootLayout title={'Головна'}></RootLayout>
+      <Layout title={'Головна'}></Layout>
     </>
   );
 }
