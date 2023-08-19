@@ -1,7 +1,7 @@
 import * as React from 'react';
 import Head from 'next/head';
 import { Header } from './Header';
-import { Main } from './Main';
+
 import { Footer } from './Footer';
 
 function generateMetadata(title) {
@@ -23,7 +23,7 @@ function generateMetadata(title) {
             </Head>
             <div className="flex min-h-screen flex-col justify-between">
                 <Header />
-                <Main />
+              <main>{ children }</main>
                 <Footer />
             </div>
         </>        
