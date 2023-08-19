@@ -1,27 +1,27 @@
-// import Layout from '../components/Layout';
-
-// export default function Home() {
-//   return (
-//     <>
-//       <Layout title="Головна"></Layout>
-//     </>
-//   );
-// }
-
 import React from 'react';
-import RootLayout from '../components/RootLayout';
-import Header from '../components/Header';
-import Main  from '../components/Main';
-import Footer  from '../components/Footer';
+import Layout from './layout'; // Убедитесь, что путь правильный
+import Head from 'next/head';
+
 
 export default function Home() {
+  const metadata = {
+    title: 'Головна',
+    description: 'Описание вашей главной страницы',
+  };
+
   return (
-    <RootLayout title="Home">
-     <div className="flex min-h-screen flex-col justify-between">
-        <Header />
-        <Main />
-        <Footer />
-     </div>
-    </RootLayout>
+    <Layout metadata={metadata}>
+      <Head>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+      <div className="flex min-h-screen flex-col justify-between">
+        {/* Остальной ваш контент */}
+      </div>
+      <div className="flex min-h-screen flex-col justify-between">
+                <Header />
+                <Main />
+                <Footer />
+            </div>
+    </Layout>
   );
 }
