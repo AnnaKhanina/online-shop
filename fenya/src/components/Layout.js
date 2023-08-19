@@ -7,9 +7,9 @@ export default function Layout() {
     return (
         <>
            <div className="flex min-h-screen flex-col justify-between">
-                <Header />
-                <Main />
-                <Footer />
+                <Header></Header>
+                <Main></Main>
+                <Footer></Footer>
             </div>
         </>        
     );

@@ -2,7 +2,7 @@ import React from 'react';
 import './input.css';
 import Head from 'next/head';
 
-export default function Layout({ children, metadata }) {
+export default function RootLayout({ children, metadata }) {
   return (
     <html lang="en">
       <Head>
