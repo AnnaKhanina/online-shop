@@ -1,18 +1,13 @@
-
-import React from 'react';
-import './input.css';
 import Head from 'next/head';
+import Layout from '../components/Layout';
 
-
-export default function RootLayout({ children, metadata }) {
+export default function Home() {
   return (
-    <html lang="en">
+    <>
       <Head>
-        <title>{metadata.title ? metadata.title + ' Fenya' : 'Fenya'}</title>
-        <meta name="description" content={metadata.description || 'Default description'} />
-        {/* Дополнительные мета-теги, стили и другие */}
+        <link rel="icon" href="/favicon.ico" />
       </Head>
-      <body>{children}</body>
-    </html>
+      <Layout />
+    </>
   );
 }
