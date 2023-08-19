@@ -1,16 +1,18 @@
+
 import React from 'react';
-import RootLayout from './layout'; // Убедитесь, что путь правильный
-import Layout from '../components/Layout'; 
+import './input.css';
+import Head from 'next/head';
 
-export default function Home() {
-  const metadata = {
-    title: 'Головна',
-    description: 'online-shopping',
-  };
 
+export default function RootLayout({ children, metadata }) {
   return (
-    <RootLayout metadata={metadata}>
-      <Layout></Layout>
-    </RootLayout>
+    <html lang="en">
+      <Head>
+        <title>{metadata.title ? metadata.title + ' Fenya' : 'Fenya'}</title>
+        <meta name="description" content={metadata.description || 'Default description'} />
+        {/* Дополнительные мета-теги, стили и другие */}
+      </Head>
+      <body>{children}</body>
+    </html>
   );
 }
