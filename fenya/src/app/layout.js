@@ -1,11 +1,12 @@
 import './input.css';
 
 export const metadata = {
+  title: {
+    template: '%s | Fenya',
+    default: 'Fenya',
+  },
   openGraph: {
-    title: {
-      template: '%s | Fenya',
-      default: 'Fenya',
-    },
+    title: 'Fenya',
     description: 'online store of underwear and clothes', 
     siteName: 'Fenya',
     locale: 'uk_UA',
