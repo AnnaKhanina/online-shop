@@ -1,6 +1,7 @@
 import './input.css';
 
 export const metadata = {
+  title: 'Fenya',  
   openGraph: {
     title: {
       template: '%s | Fenya',
