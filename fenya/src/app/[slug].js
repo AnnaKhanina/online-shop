@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { useRouter } from 'next/router';
-import data from "../../utils/data";
+import data from "../utils/data";
 
 export default function ProductScreen() {
     const { query } = useRouter();

@@ -1,4 +1,6 @@
 import './input.css';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
 
 export const metadata = {
   title: 'Fenya',  
@@ -32,7 +34,14 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      {/* <body>{children}</body> */}
+      <div className="flex flex-col min-h-screen mx-auto max-w-2xl px-4 pt-8 pb-16">
+          <div className="flex-grow">
+            <Header />
+            <main className="my-0 py-16">{children}</main>
+          </div>
+          <Footer />
+        </div>
     </html>
   );
 }
