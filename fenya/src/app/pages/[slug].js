@@ -1,11 +1,12 @@
-import * as React from 'react';
 import { useRouter } from 'next/router';
-import data from "../utils/data";
+import data from "../../utils/data";
 
 export default function ProductScreen() {
-    const { query } = useRouter();
+    const router = useRouter(); 
+    const { query } = router;
     const { slug } = query;
     const product = data.products.find(item => item.slug === slug)
+    
      if(!product) {
         return (
             <h1>Product not found</h1>
