@@ -1,4 +1,3 @@
-import * as React from 'react';
 import data from '../utils/data';
 import { ProductItem } from './ProductItem';
 
@@ -11,7 +10,6 @@ export function Main() {
                     product={product}
                     key={product.slug}
                 ></ProductItem>
-
             ))}
         </div>
     </main>
