@@ -33,7 +33,7 @@
 
 import React from 'react';
 import { useRouter } from 'next/router';
-import data from '../../utils/data'; // Путь к вашему data.js файлу
+import data from '../../data'; // Путь к вашему data.js файлу
 
 function ProductPage() {
   const router = useRouter();
@@ -57,6 +57,7 @@ function ProductPage() {
 }
 
 export default ProductPage;
+
 
 
 
