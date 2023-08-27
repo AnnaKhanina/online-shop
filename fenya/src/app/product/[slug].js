@@ -1,61 +1,35 @@
-import { useRouter } from 'next/router';
-// import data from "../../utils/data";
+import React from 'react';
+import data from '../../data'; // Путь к вашему data.js файлу
 
-export const metadata = {
-    title: 'Product page',
-  }
+function ProductPage({ product }) {
+  return (
+    <div>
+      <h1>{product.name}</h1>
+      <img src={product.image} alt={product.name} />
+      <p>Category: {product.category}</p>
+      <p>Price: {product.price}</p>
+      <p>Brand: {product.brand}</p>
+      <p>Description: {product.description}</p>
+    </div>
+  );
+}
 
-export default function Page() {
-    const router = useRouter(); 
-    // const { query } = router;
-    // const { slug } = query;
-    // const product = data.products.find(item => item.slug === slug)
-    
-    //  if(!product) {
-    //     return (
-    //         <h1>Product not found</h1>
-    //     )
-    //  }
+export async function getStaticPaths() {
+  const paths = data.products.map((product) => ({
+    params: { slug: product.slug },
+  }));
 
-    return (
-        <div>
-            <Layout>
-                {/* <h1>{ product.name }</h1> */}
-                <h1>{router.query.slug}</h1>
-            </Layout>            
-        </div>  
-    );
-};
+  return { paths, fallback: false };
+}
 
-// import data from "../../utils/data";
+export async function getStaticProps({ params }) {
+  const { slug } = params;
+  const product = data.products.find((product) => product.slug === slug);
 
-// export default (req, res) => {
-//   res.status(200).json({ data: req.query.id, brand })
-// }
+  return { props: { product } };
+}
 
-// import { withRouter } from 'next/router';
-// import data from "../../utils/data";
-
-// function ProductScreen({ router }) {
-//     const { query } = router;
-//     const { slug } = query;
-//     const product = data.products.find(item => item.slug === slug)
-    
-//      if(!product) {
-//         return (
-//             <h1>Product not found</h1>
-//         )
-//      }
-
-//     return (
-//         <div>
-//             <h1>{ product.name }</h1>
-//         </div>  
-//     );
-// }
-
-// export default withRouter(ProductScreen);
-
+export default ProductPage;
 
 
 
