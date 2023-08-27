@@ -1,5 +1,5 @@
 import React from 'react';
-import data from '../../data'; // Путь к вашему data.js файлу
+import data from '../../utils/data'; 
 
 function ProductPage({ product }) {
   return (
