@@ -23,7 +23,7 @@
 //     )
 // }
 
-import { useRouter } from 'next/router';
+import { useRouter } from 'next/navigation';
 
 export function ProductItem({ product }) {
   const router = useRouter();
