@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react';
 import { useRouter } from 'next/router';
 import data from '../../utils/data';
@@ -19,9 +21,11 @@ export default function ProductPage() {
   return (
     <div>
       <h1>{product.name}</h1>
-      <p>{product.description}</p>
-      <p>{product.price}</p>
-      {/* Отобразите остальную информацию о товаре */}
+      <img src={product.image} alt={product.name} />
+      <p>Category: {product.category}</p>
+      <p>Price: {product.price}</p>
+      <p>Brand: {product.brand}</p>
+      <p>Description: {product.description}</p>
     </div>
   );
 }
