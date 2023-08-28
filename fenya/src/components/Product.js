@@ -25,7 +25,7 @@
 
 import { useRouter } from 'next/navigation';
 
-export function ProductItem({ product }) {
+export function Product({ product }) {
   const router = useRouter();
 
   const handleClick = () => {
